@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment</title>
+</head>
+<style>
+    button {
+        alignment: center;
+        width: 300px;
+    }
+</style>
+<body>
+<div style= "width: 700px; padding: 20px; border: solid black 1px;margin:auto">
+    <h2>Programming Showcase</h2>
+    <p> During my MSc I programmed two experiments: One for my Programming module, using Python, and one for my dissertation, using JavaScript. The experiments can be accessed below:</p>
+
+<button  onclick="goTo('python')"> Python experiment (Module assignment)</button>
+<button  onclick="goTo('diss')"> JavaScript experiment (Dissertation) </button>
+</div>
+<script>
+    function goTo(where) {
+        if (where === "python") {
+            window.location.href = 'pS.html';
+        } else {
+            window.location.href = 'dS.html';
+        }
+    }
+
+</script>
+</body>
+</html>
